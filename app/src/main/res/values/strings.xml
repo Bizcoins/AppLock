@@ -1,33 +1,40 @@
-<string name="device_admin_description">Prevents unauthorized people from uninstalling the app.</string>
-<string name="accessibility_service_description">Allows App Lock to detect when protected apps are opened and show password verification.</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General Strings -->
+    <string name="device_admin_description">Prevents unauthorized people from uninstalling the app.</string>
+    <string name="accessibility_service_description">Allows App Lock to detect when protected apps are opened and show password verification.</string>
 
-<string name="unlock_to_disable_admin">Enter your password to disable admin permission.</string>
-<string name="incorrect_pin_try_again">Incorrect PIN. Please try again.</string>
-<string name="password_verified_admin">Password verified, you can now disable admin permission</string>
-<string name="choose_app_detection">Choose App Detection Method</string>
-<string name="app_detection_desc">Select how you want AppLock to detect when protected apps are launched.</string>
-<string name="notif_perm">Notification Permission</string>
-<string name="notif_perm_desc">AppLock needs permission to show notifications to keep you informed and keep running in background properly. Tap 'Next' to grant permission.</string>
-<string name="notif_perm_granted">Notification permission is automatically granted on your Android version.</string>
-<string name="welc_applock">Welcome to AppLock</string>
-<string name="welcome_desc">Protect your apps and privacy with AppLock. We'll guide you through a quick setup.</string>
-<string name="secure_apps">Secure Your Apps</string>
-<string name="secure_apps_desc">Keep your private apps protected with advanced locking mechanisms</string>
-<string name="display_over_apps">Display Over Other Apps</string>
-<string name="display_over_apps_desc">AppLock needs permission to display over other apps to show the lock screen. Tap 'Next' and enable the permission.</string>
+    <!-- Admin Disable Screen -->
+    <string name="unlock_to_disable_admin">Enter your password to disable admin permission.</string>
+    <string name="incorrect_pin_try_again">Incorrect PIN. Please try again.</string>
+    <string name="password_verified_admin">Password verified, you can now disable admin permission</string>
 
-<!-- AppIntroScreen -->
-<string name="notification_permission_required_desc">Notification permission is required for AppLock to function properly.</string>
-<string name="shizuku_permission_granted">Shizuku permission granted</string>
-<string name="shizuku_permission_required_desc">Shizuku permission is required for advanced features.</string>
-<string name="allow_display_over_other_apps">Please allow AppLock to display over other apps.</string>
-<string name="disable_battery_optimization_title">Disable Battery Optimization</string>
-<string name="disable_battery_optimization_desc">To ensure AppLock runs reliably in the background, please disable battery optimizations for the app. Tap 'Next' to open settings.</string>
-<string name="accessibility_service_title">Accessibility Service</string>
-<string name="accessibility_service_card_desc">Standard method that works on most devices. Requires accessibility permission. May have slight delays on some OEMs.</string>
-<string name="usage_stats_title">Usage Stats</string>
-<string name="usage_stats_card_desc">Experimental method utilizing system usage statistics. Works better on some devices.</string>
-<string name="shizuku_service_title">Shizuku Service</string>
-<string name="shizuku_service_card_desc">Advanced method with better performance and superior experience. Requires Shizuku app installed and enabled via ADB.</string>
-<string name="can_change_later_in_settings">You can change this later in settings</string>
-<string name="app_intro_accessibility_desc">
+    <!-- App Intro / Setup -->
+    <string name="choose_app_detection">Choose App Detection Method</string>
+    <string name="app_detection_desc">Select how you want AppLock to detect when protected apps are launched.</string>
+    <string name="notif_perm">Notification Permission</string>
+    <string name="notif_perm_desc">AppLock needs permission to show notifications to keep you informed and keep running in background properly. Tap 'Next' to grant permission.</string>
+    <string name="notif_perm_granted">Notification permission is automatically granted on your Android version.</string>
+    <string name="welc_applock">Welcome to AppLock</string>
+    <string name="welcome_desc">Protect your apps and privacy with AppLock. We\'ll guide you through a quick setup.</string>
+    <string name="secure_apps">Secure Your Apps</string>
+    <string name="secure_apps_desc">Keep your private apps protected with advanced locking mechanisms</string>
+    <string name="display_over_apps">Display Over Other Apps</string>
+    <string name="display_over_apps_desc">AppLock needs permission to display over other apps to show the lock screen. Tap 'Next' and enable the permission.</string>
+    <string name="notification_permission_required_desc">Notification permission is required for AppLock to function properly.</string>
+    <string name="shizuku_permission_granted">Shizuku permission granted</string>
+    <string name="shizuku_permission_required_desc">Shizuku permission is required for advanced features.</string>
+    <string name="allow_display_over_other_apps">Please allow AppLock to display over other apps.</string>
+    <string name="disable_battery_optimization_title">Disable Battery Optimization</string>
+    <string name="disable_battery_optimization_desc">To ensure AppLock runs reliably in the background, please disable battery optimizations for the app. Tap 'Next' to open settings.</string>
+    <string name="accessibility_service_title">Accessibility Service</string>
+    <string name="accessibility_service_card_desc">Standard method that works on most devices. Requires accessibility permission. May have slight delays on some OEMs.</string>
+    <string name="usage_stats_title">Usage Stats</string>
+    <string name="usage_stats_card_desc">Experimental method utilizing system usage statistics. Works better on some devices.</string>
+    <string name="shizuku_service_title">Shizuku Service</string>
+    <string name="shizuku_service_card_desc">Advanced method with better performance and superior experience. Requires Shizuku app installed and enabled via ADB.</string>
+    <string name="can_change_later_in_settings">You can change this later in settings</string>
+
+    <!-- Note: I removed the incomplete string tag: <string name="app_intro_accessibility_desc"> -->
+    <!-- You might need to add content to this string if it's meant to be used -->
+</resources>
