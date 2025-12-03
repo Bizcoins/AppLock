@@ -1,0 +1,28 @@
+name: Gemini Dispatch
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  
+jobs:
+  run_gemini_cli:
+    # Only run the action if the comment mentions @gemini-cli
+    if: |
+      contains(github.event.comment.body, '@gemini-cli') ||
+      contains(github.event.pull_request.body, '@gemini-cli')
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Needed for full context
+
+      - uses: google-github-actions/run-gemini-cli@v1
+        with:
+          # Use the Secret you created in Step 2
+          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+          # This tells the Action to respond to comments/mentions
+          action_type: 'dispatch'
