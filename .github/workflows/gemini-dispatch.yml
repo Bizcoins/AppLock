@@ -16,10 +16,10 @@ jobs:
 
     steps: # <--- THIS LINE MUST BE ALIGNED WITH 'runs-on'
       - uses: actions/checkout@v4
-        with:
+        with: #
           fetch-depth: 0 # Needed for full context
 
-      - uses: google-github-actions/gemini-action@v1 # <-- Note the CORRECT action name
-        with:
+          - uses: google/gemini-action@v1 # <-- CHANGE IS HERE
+        with: #
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
           action_type: 'dispatch'
